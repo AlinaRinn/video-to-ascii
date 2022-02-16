@@ -43,6 +43,7 @@ except:
     print(f'{selected_video_number} - неверный номер X_X')
     exit()
 
+os.system(f'{selected_video}') # added
 vidcap = cv2.VideoCapture(selected_video)
 success, image = vidcap.read()
 
